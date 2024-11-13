@@ -17,6 +17,8 @@ def exibir_resultado(media):
     print(f"A média do aluno é: {media:.2f}")
     if media >= 6.0:
         print("Aprovado")
+    elif media >= 5.0:
+        print("Recuperação")
     else:
         print("Reprovado")
 

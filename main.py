@@ -1,8 +1,8 @@
 # main.py
 
-# Função para calcular a média aritmética
+# Função para calcular a média ponderada
 def calcular_media(notas):
-    return sum(notas) / len(notas)
+    return (notas[0] + notas[1] + notas[2] * 2) / 4
 
 # Função para obter as notas do usuário
 def obter_notas():
@@ -14,7 +14,7 @@ def obter_notas():
 
 # Função para exibir o resultado
 def exibir_resultado(media):
-    print(f"A média do aluno é: {media:.2f}")
+    print(f"A média ponderada do aluno é: {media:.2f}")
     if media >= 6.0:
         print("Aprovado")
     elif media >= 5.0:

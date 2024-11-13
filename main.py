@@ -15,6 +15,10 @@ def obter_notas():
 # Função para exibir o resultado
 def exibir_resultado(media):
     print(f"A média do aluno é: {media:.2f}")
+    if media >= 6.0:
+        print("Aprovado")
+    else:
+        print("Reprovado")
 
 # Função principal
 if __name__ == "__main__":
